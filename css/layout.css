@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 100px 1fr 40px;
+    grid-template-columns: 100px 1fr 140px;
     grid-template-areas:
         "hed hed hed"
         "menu feed msg";

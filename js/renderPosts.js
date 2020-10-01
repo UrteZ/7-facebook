@@ -1,21 +1,36 @@
 function renderPosts(data) {
-    // console.log('labukas');
-// logika kuri sugeneruoja turini
+
+    // validacija
+
+    // logika kuri sugeneruoja turini
+
     let HTML = '';
-    // console.log(data);
+
     for (let i = 0; i < data.length; i++) {
         const post = data[i];
-        HTML += `<div class="post"> ${post.author.name}</div>`;
+        HTML += `<div class="post"> 
+                    <header>
+                        ${post.author.name} ${post.author.lastname}
+                    </header>
+                    <div>
+                        ${post.author.name}
+                    </div>
+                    <footer>
+                        Like + comment
+                    </footer>
+                </div>`;
     }
-    console.log(HTML);
+    
 
-    // susirandame MediaElementAudioSourceNode, kuriame norime perrasyti turini
+    // susirandame elementa, kuriame norime perrasyti turini
     const feedDOM = document.querySelector('main');
     console.log(feedDOM);
 
     // i ta elementa ikeliame HTML kintamojo reiksme
-    feedDOM.innerHTML = 'Nebe feedas';
+    console.log(feedDOM.innerHTML);
 
+    feedDOM.innerHTML = HTML;
 
 }
+
 export default renderPosts;
