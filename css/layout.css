@@ -5,7 +5,7 @@ body {
         "hed hed hed"
         "menu feed msg";
 }
-    header {
+    body > header {
         grid-area: hed;
         background-color: blue;
     }
