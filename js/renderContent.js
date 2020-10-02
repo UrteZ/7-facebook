@@ -17,8 +17,8 @@ function renderContent (data) {
         textHTML = renderContentText(data.text);
     }
     return `<div>
-            ${textHTML}
-            ${photosHTML}
+                ${textHTML}
+                ${photosHTML}
             </div>`;
 }
 
