@@ -1,7 +1,7 @@
 import renderContentText from './renderContentText.js';
 import renderContentGallery from './renderContentGallery.js';
 
-function renderContent (data) {
+function renderContent(data) {
     if (!data) {
         console.error('ERROR: negautas post turini aprasantis objektas');
         return '';
@@ -16,7 +16,7 @@ function renderContent (data) {
     if (data.text){
         textHTML = renderContentText(data.text);
     }
-    return `<div>
+    return `<div class="content">
                 ${textHTML}
                 ${photosHTML}
             </div>`;
