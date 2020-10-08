@@ -9,13 +9,15 @@ body {
         grid-area: hed;
         background-color: blue;
     }
+    body > aside {
+        background-color: #f5f5f5;
+    }
+
     .menu {
         grid-area: menu;
-        background-color: #f5f5f5;
     }
     .messenger {
         grid-area: msg;
-        background-color: #f5f5f5;
     }
     body > main {
         grid-area: feed;
